@@ -1,0 +1,240 @@
+/* ==== CORE (raw primitives) ==== */
+:root {
+  --core-unit-1: 0.25rem; /* 4px */
+  --core-unit-2: 0.5rem;  /* 8px */
+  --core-unit-3: 1rem;    /* 16px */
+  --core-unit-4: 2rem;    /* 32px */
+}
+
+/* ==== COLOR PALETTE (raw brand colors) ==== */
+:root {
+  --palette-social-instagram: radial-gradient(circle, #ff1b90 24%, #f80261 44%, #ed00c0 69%, #c500e9 78%, #7017ff 89%);
+  --palette-social-linkedin: #0a66c2;
+}
+
+/* ==== TYPOGRAPHY SCALE (raw steps) ==== */
+:root {
+  --scale-title-default-font-size: 2.5000rem;
+  --scale-title-default-line-height: 1.0499999523162842;
+  --scale-title-small-font-size: 2.0000rem;
+  --scale-title-small-line-height: 1.0499999523162842;
+  --scale-title-large-font-size: 3.0000rem;
+  --scale-title-large-line-height: 1.0499999523162842;
+  --scale-title-extra-large-font-size: 5.0000rem;
+  --scale-title-extra-large-line-height: 1.0499999523162842;
+  --scale-subtitle-default-font-size: 1.0000rem;
+  --scale-subtitle-default-line-height: 1.100000023841858;
+  --scale-subtitle-small-font-size: 0.8750rem;
+  --scale-subtitle-small-line-height: 1.100000023841858;
+  --scale-subtitle-large-font-size: 1.2500rem;
+  --scale-subtitle-large-line-height: 1.100000023841858;
+  --scale-body-default-font-size: 1.0000rem;
+  --scale-body-default-line-height: 1.399999976158142;
+  --scale-body-default-strong-font-size: 1.0000rem;
+  --scale-body-default-strong-line-height: 1.399999976158142;
+  --scale-body-small-font-size: 0.8750rem;
+  --scale-body-small-line-height: 1.2000000476837158;
+  --scale-body-small-strong-font-size: 0.8750rem;
+  --scale-body-small-strong-line-height: 1.399999976158142;
+  --scale-body-large-font-size: 1.2500rem;
+  --scale-body-large-line-height: 1.100000023841858;
+  --scale-body-large-strong-font-size: 1.2500rem;
+  --scale-body-large-strong-line-height: 1.2999999523162842;
+  --scale-caption-default-font-size: 0.6250rem;
+  --scale-caption-default-line-height: 1.100000023841858;
+  --scale-text-scale-title-100-font-size: 0.7500rem;
+  --scale-text-scale-title-100-line-height: 1.149999976158142;
+  --scale-text-scale-title-200-font-size: 0.8750rem;
+  --scale-text-scale-title-200-line-height: 1.149999976158142;
+  --scale-text-scale-title-300-font-size: 1.0000rem;
+  --scale-text-scale-title-300-line-height: 1.100000023841858;
+  --scale-text-scale-title-400-font-size: 1.2500rem;
+  --scale-text-scale-title-400-line-height: 1.100000023841858;
+  --scale-text-scale-title-500-font-size: 1.5000rem;
+  --scale-text-scale-title-500-line-height: 1.100000023841858;
+  --scale-text-scale-title-600-font-size: 1.7500rem;
+  --scale-text-scale-title-600-line-height: 1.100000023841858;
+  --scale-text-scale-title-700-font-size: 2.0000rem;
+  --scale-text-scale-title-700-line-height: 1.0;
+  --scale-text-scale-title-800-font-size: 2.5000rem;
+  --scale-text-scale-title-800-line-height: 1.0;
+  --scale-text-scale-title-900-font-size: 3.0000rem;
+  --scale-text-scale-title-900-line-height: 1.100000023841858;
+  --scale-text-scale-title-1000-font-size: 3.5000rem;
+  --scale-text-scale-title-1000-line-height: 1.0;
+  --scale-text-scale-title-1100-font-size: 4.0000rem;
+  --scale-text-scale-title-1100-line-height: 1.0;
+  --scale-text-scale-title-1200-font-size: 5.0000rem;
+  --scale-text-scale-title-1200-line-height: 1.0;
+  --scale-text-scale-title-1300-font-size: 5.5000rem;
+  --scale-text-scale-title-1300-line-height: 1.0;
+  --scale-text-scale-title-1400-font-size: 6.0000rem;
+  --scale-text-scale-title-1400-line-height: 1.0;
+  --scale-text-scale-title-1500-font-size: 8.0000rem;
+  --scale-text-scale-title-1500-line-height: 1.0;
+  --scale-text-scale-title-1600-font-size: 10.0000rem;
+  --scale-text-scale-title-1600-line-height: 1.0;
+  --scale-text-scale-title-1700-font-size: 16.0000rem;
+  --scale-text-scale-title-1700-line-height: 1.0;
+  --scale-text-scale-body-regular-100-font-size: 0.7500rem;
+  --scale-text-scale-body-regular-100-line-height: 1.600000023841858;
+  --scale-text-scale-body-regular-200-font-size: 0.8750rem;
+  --scale-text-scale-body-regular-200-line-height: 1.600000023841858;
+  --scale-text-scale-body-regular-300-font-size: 1.0000rem;
+  --scale-text-scale-body-regular-300-line-height: 1.600000023841858;
+  --scale-text-scale-body-regular-400-font-size: 1.2500rem;
+  --scale-text-scale-body-regular-400-line-height: 1.600000023841858;
+  --scale-text-scale-body-regular-500-font-size: 1.5000rem;
+  --scale-text-scale-body-regular-500-line-height: 1.600000023841858;
+  --scale-text-scale-body-regular-600-font-size: 1.7500rem;
+  --scale-text-scale-body-regular-600-line-height: 1.600000023841858;
+  --scale-text-scale-body-regular-700-font-size: 2.0000rem;
+  --scale-text-scale-body-regular-700-line-height: 1.600000023841858;
+  --scale-text-scale-body-regular-800-font-size: 2.5000rem;
+  --scale-text-scale-body-regular-800-line-height: 1.600000023841858;
+  --scale-text-scale-body-regular-900-font-size: 3.0000rem;
+  --scale-text-scale-body-regular-900-line-height: 1.600000023841858;
+  --scale-text-scale-body-regular-1000-font-size: 3.5000rem;
+  --scale-text-scale-body-regular-1000-line-height: 1.600000023841858;
+  --scale-text-scale-body-regular-1100-font-size: 4.0000rem;
+  --scale-text-scale-body-regular-1100-line-height: 1.5;
+  --scale-text-scale-body-regular-1200-font-size: 5.0000rem;
+  --scale-text-scale-body-regular-1200-line-height: 1.399999976158142;
+  --scale-text-scale-body-regular-1300-font-size: 5.5000rem;
+  --scale-text-scale-body-regular-1300-line-height: 1.399999976158142;
+  --scale-text-scale-body-regular-1400-font-size: 6.0000rem;
+  --scale-text-scale-body-regular-1400-line-height: 1.399999976158142;
+  --scale-text-scale-body-regular-1500-font-size: 8.0000rem;
+  --scale-text-scale-body-regular-1500-line-height: 1.399999976158142;
+  --scale-text-scale-body-regular-1600-font-size: 10.0000rem;
+  --scale-text-scale-body-regular-1600-line-height: 1.399999976158142;
+  --scale-text-scale-body-regular-1700-font-size: 16.0000rem;
+  --scale-text-scale-body-regular-1700-line-height: 1.0;
+  --scale-text-scale-body-strong-100-font-size: 0.7500rem;
+  --scale-text-scale-body-strong-100-line-height: 1.600000023841858;
+  --scale-text-scale-body-strong-200-font-size: 0.8750rem;
+  --scale-text-scale-body-strong-200-line-height: 1.600000023841858;
+  --scale-text-scale-body-strong-300-font-size: 1.0000rem;
+  --scale-text-scale-body-strong-300-line-height: 1.600000023841858;
+  --scale-text-scale-body-strong-400-font-size: 1.2500rem;
+  --scale-text-scale-body-strong-400-line-height: 1.600000023841858;
+  --scale-text-scale-body-strong-500-font-size: 1.5000rem;
+  --scale-text-scale-body-strong-500-line-height: 1.600000023841858;
+  --scale-text-scale-body-strong-600-font-size: 1.7500rem;
+  --scale-text-scale-body-strong-600-line-height: 1.600000023841858;
+  --scale-text-scale-body-strong-700-font-size: 2.0000rem;
+  --scale-text-scale-body-strong-700-line-height: 1.600000023841858;
+  --scale-text-scale-body-strong-800-font-size: 2.5000rem;
+  --scale-text-scale-body-strong-800-line-height: 1.600000023841858;
+  --scale-text-scale-body-strong-900-font-size: 3.0000rem;
+  --scale-text-scale-body-strong-900-line-height: 1.600000023841858;
+  --scale-text-scale-body-strong-1000-font-size: 3.5000rem;
+  --scale-text-scale-body-strong-1000-line-height: 1.5;
+  --scale-text-scale-body-strong-1100-font-size: 4.0000rem;
+  --scale-text-scale-body-strong-1100-line-height: 1.5;
+  --scale-text-scale-body-strong-1200-font-size: 5.0000rem;
+  --scale-text-scale-body-strong-1200-line-height: 1.5;
+  --scale-text-scale-body-strong-1300-font-size: 5.5000rem;
+  --scale-text-scale-body-strong-1300-line-height: 1.5;
+  --scale-text-scale-body-strong-1400-font-size: 6.0000rem;
+  --scale-text-scale-body-strong-1400-line-height: 1.5;
+  --scale-text-scale-body-strong-1500-font-size: 8.0000rem;
+  --scale-text-scale-body-strong-1500-line-height: 1.5;
+  --scale-text-scale-body-strong-1600-font-size: 10.0000rem;
+  --scale-text-scale-body-strong-1600-line-height: 1.399999976158142;
+  --scale-text-scale-body-strong-1700-font-size: 16.0000rem;
+  --scale-text-scale-body-strong-1700-line-height: 1.399999976158142;
+}
+
+/* ==== SEMANTIC COLORS & ACTION ==== */
+:root {
+  --color-text-primary: var(--palette-social-linkedin);
+  --color-status-success: #28a745;
+  --color-status-error: #dc3545;
+  --action-primary: var(--palette-social-linkedin);
+  --action-primary-hover: #0c77e0;
+  --action-primary-active: #095aa5;
+  --action-disabled: #cccccc;
+}
+
+/* ==== LAYOUT ==== */
+:root {
+  --container-contained-max-width: 1440px;
+  --container-contained-indent: 1rem;
+  --container-contained-offset: 0;
+  --grid-contained-gutter: 1rem;
+  --container-flush-max-width: 100%;
+  --container-flush-indent: 0;
+  --container-flush-offset: 0;
+  --grid-flush-gutter: 0;
+  --space-xs: var(--core-unit-2);
+  --space-md: var(--core-unit-3);
+  --space-lg: var(--core-unit-4);
+  --screen-height-sm: 30dvh;
+  --screen-height-md: 60dvh;
+  --screen-height-lg: 80dvh;
+  --screen-height-full: 100dvh;
+  --aspect-landscape: 3/2;
+  --aspect-portrait: 4/5;
+  --aspect-tall: 2/3;
+  --aspect-square: 1/1;
+  --type-heading-lg-size: clamp(var(--scale-text-scale-title-600-font-size), 2vw + 1rem, var(--scale-text-scale-title-900-font-size));
+  --type-heading-lg-line-height: 1.1;
+}
+
+/* ==== GRID UTILITIES ==== */
+.col-span-1 { grid-column: span 1 / span 1; }
+.col-start-1 { grid-column-start: 1; }
+.col-span-2 { grid-column: span 2 / span 2; }
+.col-start-2 { grid-column-start: 2; }
+.col-span-3 { grid-column: span 3 / span 3; }
+.col-start-3 { grid-column-start: 3; }
+.col-span-4 { grid-column: span 4 / span 4; }
+.col-start-4 { grid-column-start: 4; }
+.col-span-5 { grid-column: span 5 / span 5; }
+.col-start-5 { grid-column-start: 5; }
+.col-span-6 { grid-column: span 6 / span 6; }
+.col-start-6 { grid-column-start: 6; }
+.col-span-7 { grid-column: span 7 / span 7; }
+.col-start-7 { grid-column-start: 7; }
+.col-span-8 { grid-column: span 8 / span 8; }
+.col-start-8 { grid-column-start: 8; }
+.col-span-9 { grid-column: span 9 / span 9; }
+.col-start-9 { grid-column-start: 9; }
+.col-span-10 { grid-column: span 10 / span 10; }
+.col-start-10 { grid-column-start: 10; }
+.col-span-11 { grid-column: span 11 / span 11; }
+.col-start-11 { grid-column-start: 11; }
+.col-span-12 { grid-column: span 12 / span 12; }
+.col-start-12 { grid-column-start: 12; }
+
+/* ==== ICON ==== */
+:root {
+  --icon-size-sm: 1rem;
+  --icon-size-md: 1.5rem;
+  --icon-size-lg: 2rem;
+}
+
+/* ==== SHADOWS ==== */
+:root {
+  --elevation-border-border-focused: box-shadow: 0px 0px 0px 2px #3a96cf;
+  --elevation-shadow-drop-shadow-0: box-shadow: 0px 0px 0px 0px rgba(10, 10, 10, 0);
+  --elevation-shadow-drop-shadow-100: box-shadow: 0px 0px 1px 0px rgba(10, 10, 10, 0.10000000149011612), 0px 2px 2px 0px rgba(10, 10, 10, 0.09000000357627869), 0px 4px 2px 0px rgba(10, 10, 10, 0.05000000074505806), 0px 7px 3px 0px rgba(10, 10, 10, 0.009999999776482582), 0px 11px 3px 0px rgba(10, 10, 10, 0);
+  --elevation-shadow-drop-shadow-200: box-shadow: 0px 0px 2px 0px rgba(10, 10, 10, 0.15000000596046448), 0px 4px 4px 0px rgba(10, 10, 10, 0.12999999523162842), 0px 9px 5px 0px rgba(10, 10, 10, 0.07999999821186066), 0px 16px 6px 0px rgba(10, 10, 10, 0.019999999552965164), 0px 25px 7px 0px rgba(10, 10, 10, 0);
+  --elevation-shadow-inner-shadow-0: box-shadow: inset 0px 0px 0px 0px rgba(10, 10, 10, 0);
+  --elevation-shadow-inner-shadow-100: box-shadow: inset 0px 0px 2px 0px rgba(10, 10, 10, 0.10000000149011612), inset 0px 2px 2px 0px rgba(10, 10, 10, 0.09000000357627869), inset 0px 4px 2px 0px rgba(10, 10, 10, 0.05000000074505806), inset 0px 7px 3px 0px rgba(10, 10, 10, 0.009999999776482582), inset 0px 11px 3px 0px rgba(10, 10, 10, 0);
+  --elevation-shadow-inner-shadow-200: box-shadow: inset 0px 0px 2px 0px rgba(10, 10, 10, 0.15000000596046448), inset 0px 4px 4px 0px rgba(10, 10, 10, 0.12999999523162842), inset 0px 9px 5px 0px rgba(10, 10, 10, 0.07999999821186066), inset 0px 16px 6px 0px rgba(10, 10, 10, 0.019999999552965164), inset 0px 25px 7px 0px rgba(10, 10, 10, 0);
+  --elevation-surface-blur-material-blur-0: ;
+  --elevation-surface-blur-material-blur-100: ;
+  --elevation-surface-blur-material-blur-200: ;
+  --elevation-surface-blur-material-blur-300: ;
+  --elevation-surface-glass-material-glass-100-thin: ;
+  --elevation-surface-glass-material-glass-200-thin: ;
+  --elevation-surface-glass-material-glass-300-thin: ;
+  --elevation-surface-glass-material-glass-100-base: ;
+  --elevation-surface-glass-material-glass-200-base: ;
+  --elevation-surface-glass-material-glass-300-base: ;
+  --elevation-surface-glass-material-glass-100-thick: ;
+  --elevation-surface-glass-material-glass-200-thick: ;
+  --elevation-surface-glass-material-glass-300-thick: ;
+}
