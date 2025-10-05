@@ -1,167 +1,160 @@
 /* ==========================================================================
    Semantic Typography
-   ==========================================================================
-
-/* ==============================
-   ==========================================================================
-   ============================== */
-   Semantic Typography (abbreviated to --ty-*)
    ========================================================================== */
 
 /* ==============================
-   ==============================
+   Semantic Typography (abbreviated to --ty-)
    ============================== */
+
+/* ==============================
    Title
    ============================== */
 
-:root {
-  --ty-title-ff: var(--ff-sans);
-  --ty-title-fw: var(--fw-strong);
-  --ty-title-lh: var(--lh-50);
-}
-
-/* Title / sm */
-:root {
-  --ty-title-sm-fs: var(--fs-500);
-  --ty-title-sm-ls: var(--ls-1100);
-  --ty-title-sm-ps: calc(var(--ty-title-sm-fs) - 1px);
-}
-@media (min-width: 1024px) {
-  :root { --ty-title-sm-fs: var(--fs-700); }
-}
-@media (min-width: 1440px) {
-  :root { --ty-title-sm-fs: var(--fs-800); }
-}
-
-/* Title / md (default) */
-:root {
-  --ty-title-md-fs: var(--fs-600);
-  --ty-title-md-ls: var(--ls-1100);
-  --ty-title-md-ps: calc(var(--ty-title-md-fs) - 1px);
-}
-@media (min-width: 1024px) {
-  :root { --ty-title-md-fs: var(--fs-800); }
-}
-@media (min-width: 1440px) {
-  :root { --ty-title-md-fs: var(--fs-1000); }
-}
-
-/* Title / lg */
-:root {
-  --ty-title-lg-fs: var(--fs-700);
-  --ty-title-lg-ls: var(--ls-1100);
-  --ty-title-lg-ps: calc(var(--ty-title-lg-fs) - 1px);
-}
-@media (min-width: 1024px) {
-  :root { --ty-title-lg-fs: var(--fs-900); }
-}
-@media (min-width: 1440px) {
-  :root { --ty-title-lg-fs: var(--fs-1100); }
-}
-
-/* Title / xl */
-:root {
-  --ty-title-xl-fs: var(--fs-1000);
-  --ty-title-xl-ls: var(--ls-700);
-  --ty-title-xl-ps: calc(var(--ty-title-xl-fs) - 1px);
-}
-@media (min-width: 1024px) {
-  :root { --ty-title-xl-fs: var(--fs-1200); }
-}
-@media (min-width: 1440px) {
-  :root { --ty-title-xl-fs: var(--fs-1400); }
-}
-
-/* ==============================
-   ==============================
-   ============================== */
-   Subtitle
-   ============================== */
-
-:root {
-  --ty-subtitle-ff: var(--ff-sans);
-  --ty-subtitle-fw: var(--fw-strong);
-  --ty-subtitle-lh: var(--lh-100);
-}
-
-/* Subtitle / sm */
-:root {
-  --ty-subtitle-sm-fs: var(--fs-200);
-  --ty-subtitle-sm-ls: var(--ls-0);
-  --ty-subtitle-sm-ps: calc(var(--ty-subtitle-sm-fs) - 1px);
-}
-
-/* Subtitle / md (default) */
-:root {
-  --ty-subtitle-md-fs: var(--fs-300);
-  --ty-subtitle-md-ls: var(--ls-0);
-  --ty-subtitle-md-ps: calc(var(--ty-subtitle-md-fs) - 1px);
-}
-@media (min-width: 1024px) {
-  :root { --ty-subtitle-md-fs: var(--fs-400); }
-}
-
-/* Subtitle / lg */
-:root {
-  --ty-subtitle-lg-fs: var(--fs-400);
-  --ty-subtitle-lg-ls: var(--ls-1100);
-  --ty-subtitle-lg-ps: calc(var(--ty-subtitle-lg-fs) - 1px);
-}
-@media (min-width: 1024px) {
-  :root { --ty-subtitle-lg-fs: var(--fs-500); }
-}
-@media (min-width: 1440px) {
-  :root { --ty-subtitle-lg-fs: var(--fs-600); }
-}
-
-/* ==============================
-   ==============================
-   ============================== */
-   Body
-   ============================== */
-
-:root {
-  --ty-body-ff: var(--ff-sans);
-  --ty-body-fw: var(--fw-strong);
-  --ty-body-lh: var(--lh-400);
-}
-
-/* Body / xs */
-:root {
-  --ty-body-xs-fs: var(--fs-075);
-  --ty-body-xs-ls: var(--ls-1600);
-  --ty-body-xs-ps: calc(var(--ty-body-xs-fs) - 1px);
-}
-@media (min-width: 1440px) {
-  :root { --ty-body-xs-fs: var(--fs-100); }
-}
-
-/* Body / sm */
-:root {
-  --ty-body-sm-fs: var(--fs-200);
-  --ty-body-sm-ls: var(--ls-0);
-  --ty-body-sm-ps: calc(var(--ty-body-sm-fs) - 1px);
-}
-@media (min-width: 1440px) {
-  :root { --ty-body-sm-fs: var(--fs-300); }
-}
-
-/* Body / md (default) */
-:root {
-  --ty-body-md-fs: var(--fs-300);
-  --ty-body-md-ls: var(--ls-0);
-  --ty-body-md-ps: calc(var(--ty-body-md-fs) - 1px);
-}
-@media (min-width: 1024px) {
-  :root { --ty-body-md-fs: var(--fs-400); }
-}
-
-/* Body / lg */
-:root {
-  --ty-body-lg-fs: var(--fs-400);
-  --ty-body-lg-ls: var(--ls-1100);
-  --ty-body-lg-ps: calc(var(--ty-body-lg-fs) - 1px);
-}
-@media (min-width: 1024px) {
-  :root { --ty-body-lg-fs: var(--fs-500); }
-}
+   :root {
+    --ty-title-ff: var(--ff-sans);
+    --ty-title-fw: var(--fw-strong);
+    --ty-title-lh: var(--lh-50);
+  }
+  
+  /* Title / sm */
+  :root {
+    --ty-title-sm-fs: var(--fs-500);
+    --ty-title-sm-ls: var(--ls-1100);
+    --ty-title-sm-ps: calc(var(--ty-title-sm-fs) - 1px);
+  }
+  @media (min-width: 1024px) {
+    :root { --ty-title-sm-fs: var(--fs-700); }
+  }
+  @media (min-width: 1440px) {
+    :root { --ty-title-sm-fs: var(--fs-800); }
+  }
+  
+  /* Title / md (default) */
+  :root {
+    --ty-title-md-fs: var(--fs-600);
+    --ty-title-md-ls: var(--ls-1100);
+    --ty-title-md-ps: calc(var(--ty-title-md-fs) - 1px);
+  }
+  @media (min-width: 1024px) {
+    :root { --ty-title-md-fs: var(--fs-800); }
+  }
+  @media (min-width: 1440px) {
+    :root { --ty-title-md-fs: var(--fs-1000); }
+  }
+  
+  /* Title / lg */
+  :root {
+    --ty-title-lg-fs: var(--fs-700);
+    --ty-title-lg-ls: var(--ls-1100);
+    --ty-title-lg-ps: calc(var(--ty-title-lg-fs) - 1px);
+  }
+  @media (min-width: 1024px) {
+    :root { --ty-title-lg-fs: var(--fs-900); }
+  }
+  @media (min-width: 1440px) {
+    :root { --ty-title-lg-fs: var(--fs-1100); }
+  }
+  
+  /* Title / xl */
+  :root {
+    --ty-title-xl-fs: var(--fs-1000);
+    --ty-title-xl-ls: var(--ls-700);
+    --ty-title-xl-ps: calc(var(--ty-title-xl-fs) - 1px);
+  }
+  @media (min-width: 1024px) {
+    :root { --ty-title-xl-fs: var(--fs-1200); }
+  }
+  @media (min-width: 1440px) {
+    :root { --ty-title-xl-fs: var(--fs-1400); }
+  }
+  
+  /* ==============================
+     Subtitle
+     ============================== */
+  
+  :root {
+    --ty-subtitle-ff: var(--ff-sans);
+    --ty-subtitle-fw: var(--fw-strong);
+    --ty-subtitle-lh: var(--lh-100);
+  }
+  
+  /* Subtitle / sm */
+  :root {
+    --ty-subtitle-sm-fs: var(--fs-200);
+    --ty-subtitle-sm-ls: var(--ls-0);
+    --ty-subtitle-sm-ps: calc(var(--ty-subtitle-sm-fs) - 1px);
+  }
+  
+  /* Subtitle / md (default) */
+  :root {
+    --ty-subtitle-md-fs: var(--fs-300);
+    --ty-subtitle-md-ls: var(--ls-0);
+    --ty-subtitle-md-ps: calc(var(--ty-subtitle-md-fs) - 1px);
+  }
+  @media (min-width: 1024px) {
+    :root { --ty-subtitle-md-fs: var(--fs-400); }
+  }
+  
+  /* Subtitle / lg */
+  :root {
+    --ty-subtitle-lg-fs: var(--fs-400);
+    --ty-subtitle-lg-ls: var(--ls-1100);
+    --ty-subtitle-lg-ps: calc(var(--ty-subtitle-lg-fs) - 1px);
+  }
+  @media (min-width: 1024px) {
+    :root { --ty-subtitle-lg-fs: var(--fs-500); }
+  }
+  @media (min-width: 1440px) {
+    :root { --ty-subtitle-lg-fs: var(--fs-600); }
+  }
+  
+  /* ==============================
+     Body
+     ============================== */
+  
+  :root {
+    --ty-body-ff: var(--ff-sans);
+    --ty-body-fw: var(--fw-strong);
+    --ty-body-lh: var(--lh-400);
+  }
+  
+  /* Body / xs */
+  :root {
+    --ty-body-xs-fs: var(--fs-075);
+    --ty-body-xs-ls: var(--ls-1600);
+    --ty-body-xs-ps: calc(var(--ty-body-xs-fs) - 1px);
+  }
+  @media (min-width: 1440px) {
+    :root { --ty-body-xs-fs: var(--fs-100); }
+  }
+  
+  /* Body / sm */
+  :root {
+    --ty-body-sm-fs: var(--fs-200);
+    --ty-body-sm-ls: var(--ls-0);
+    --ty-body-sm-ps: calc(var(--ty-body-sm-fs) - 1px);
+  }
+  @media (min-width: 1440px) {
+    :root { --ty-body-sm-fs: var(--fs-300); }
+  }
+  
+  /* Body / md (default) */
+  :root {
+    --ty-body-md-fs: var(--fs-300);
+    --ty-body-md-ls: var(--ls-0);
+    --ty-body-md-ps: calc(var(--ty-body-md-fs) - 1px);
+  }
+  @media (min-width: 1024px) {
+    :root { --ty-body-md-fs: var(--fs-400); }
+  }
+  
+  /* Body / lg */
+  :root {
+    --ty-body-lg-fs: var(--fs-400);
+    --ty-body-lg-ls: var(--ls-1100);
+    --ty-body-lg-ps: calc(var(--ty-body-lg-fs) - 1px);
+  }
+  @media (min-width: 1024px) {
+    :root { --ty-body-lg-fs: var(--fs-500); }
+  }
+  
