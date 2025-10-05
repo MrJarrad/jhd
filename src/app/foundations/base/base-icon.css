@@ -20,13 +20,13 @@
     --icon-radius-300: var(--br-300);
     --icon-radius-400: var(--br-400);
   
-    /* Stroke Width — reference stroke-width primitives for consistency */
-    --icon-stroke-width-100: var(--sw-75);
-    --icon-stroke-width-200: var(--sw-100);
-    --icon-stroke-width-300: var(--sw-125);
-    --icon-stroke-width-400: var(--sw-150);
+    /* Stroke Width — reference stroke-width primitives */
+    --icon-stroke-width-100: var(--stroke-width-75);
+    --icon-stroke-width-200: var(--stroke-width-100);
+    --icon-stroke-width-300: var(--stroke-width-150);
+    --icon-stroke-width-400: var(--stroke-width-200);
   
-    /* Optional: Strikethrough widths (if used by icon variants) */
+    /* Strikethrough Widths (optional variants) */
     --icon-stroke-width-strikethrough-100: calc(var(--icon-stroke-width-100) * 2);
     --icon-stroke-width-strikethrough-200: calc(var(--icon-stroke-width-200) * 2);
     --icon-stroke-width-strikethrough-300: calc(var(--icon-stroke-width-300) * 2);
