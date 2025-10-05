@@ -1,7 +1,8 @@
-import ClientBuilder from "./ClientBuilder";
-import "@/styles/tokens.css";
+import ClientBuilder from './ClientBuilder';
+import '@/styles/tokens.css';
+import Hero from './components/Hero';
 
-const BUILDER_API_KEY = "f4f23be0b5024386a74bae0866060e0c";
+const BUILDER_API_KEY = 'f4f23be0b5024386a74bae0866060e0c';
 
 async function fetchBuilderPage(urlPath: string) {
   const url = `https://cdn.builder.io/api/v3/content/page?apiKey=${BUILDER_API_KEY}&limit=1&userAttributes.url=${encodeURIComponent(
@@ -19,16 +20,17 @@ async function fetchBuilderPage(urlPath: string) {
 }
 
 export default async function Page() {
-  const content = await fetchBuilderPage("/");
+  const content = await fetchBuilderPage('/');
 
   return (
     <main
       style={{
-        fontFamily: "var(--ff-sans)",
-        color: "var(--color-ct-pri)",
-        background: "var(--color-bg-sf-base)",
+        fontFamily: 'var(--ff-sans)',
+        color: 'var(--color-ct-pri)',
+        background: 'var(--color-bg-sf-base)',
       }}
     >
+      <Hero />
       <ClientBuilder content={content} />
     </main>
   );
