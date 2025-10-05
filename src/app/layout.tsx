@@ -1,5 +1,5 @@
-import "@/styles/tokens.css";
-import "../builder-registry";
+import "../../styles/tokens.css";
+import "../../builder-registry";
 
 export const metadata = {
   title: "JHD Website",
