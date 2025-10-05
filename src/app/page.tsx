@@ -1,5 +1,6 @@
 import ClientBuilder from './ClientBuilder';
 import '@/styles/tokens.css';
+import Hero from './components/Hero';
 
 const BUILDER_API_KEY = 'f4f23be0b5024386a74bae0866060e0c';
 
@@ -22,6 +23,7 @@ export default async function Page() {
 
   return (
     <main>
+      <Hero />
       <ClientBuilder content={content} />
     </main>
   );
