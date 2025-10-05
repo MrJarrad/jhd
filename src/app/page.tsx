@@ -1,7 +1,6 @@
 // src/app/page.tsx
 
-import { builder } from "@builder.io/react";
-import { RenderBuilderContent } from "@builder.io/react";
+import { builder, BuilderComponent } from "@builder.io/react";
 import "@/styles/tokens.css";
 
 // 🧩 Initialize Builder.io with your public API key
@@ -27,7 +26,7 @@ export default async function Page() {
   // ✅ Render the Builder.io page content
   return (
     <main>
-      <RenderBuilderContent content={content} model="page" />
+      <BuilderComponent content={content} model="page" />
     </main>
   );
 }
