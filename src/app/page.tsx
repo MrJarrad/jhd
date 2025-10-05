@@ -1,5 +1,5 @@
 import ClientBuilder from "./ClientBuilder";
-import "@/styles/tokens.css";
+import "../../styles/tokens.css";
 
 const BUILDER_API_KEY = "f4f23be0b5024386a74bae0866060e0c";
 
