@@ -1,5 +1,5 @@
 import { Builder } from "@builder.io/react";
-import { Icon } from "@/app/components/icon/icon";
+import { Icon } from "./src/app/components/Icon";
 
 /**
  * ============================================================
