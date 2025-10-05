@@ -7,7 +7,8 @@
   "build": "next build --turbopack",
   "start": "next start",
   "lint": "eslint",
-  "icons:clean": "svgo -f ./public/icons -o ./public/icons --config=svgo.config.js"
+  "icons:clean": "svgo -f ./public/icons -o ./public/icons --config=svgo.config.js",
+  "icons:build": "node build-icons.mjs"
 },
   "dependencies": {
     "@builder.io/react": "^8.2.8",
