@@ -8,6 +8,7 @@ async function fetchBuilderPage(urlPath: string) {
   const url = `https://cdn.builder.io/api/v3/content/page?apiKey=${BUILDER_API_KEY}&limit=1&userAttributes.url=${encodeURIComponent(
     urlPath
   )}`;
+
   try {
     const res = await fetch(url);
     if (!res.ok) return null;
@@ -22,7 +23,13 @@ export default async function Page() {
   const content = await fetchBuilderPage('/');
 
   return (
-    <main>
+    <main
+      style={{
+        fontFamily: 'var(--ff-sans)',
+        color: 'var(--color-ct-pri)',
+        background: 'var(--color-bg-sf-base)',
+      }}
+    >
       <Hero />
       <ClientBuilder content={content} />
     </main>
