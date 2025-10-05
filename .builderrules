@@ -1,0 +1,23 @@
+Our design system lives inside `/src/app/` and follows a layered structure:
+
+- **Foundations** → `/foundations/`
+  - `primitive/` defines core variables (colors, dimensions, typography).
+  - `base/` defines reusable token sets (actions, icons, effects).
+  - `semantic/` defines responsive tokens for spacing, grid, typography, and color (light/dark themes).
+- **Utils** → `/utils/` includes motion and font utilities.
+- **Integration** → `/integration/` maps design tokens to Builder.io props.
+
+Use tokens defined in `/styles/tokens.css` (which imports all layers).
+Reference CSS variables directly, e.g.:
+- Spacing: `var(--sp-md)`
+- Typography: `var(--ty-body-md-fs)` or `var(--ty-title-lg-lh)`
+- Colors: `var(--color-bg-sf-base)`, `var(--color-ct-pri)`
+- Borders & Elevation: `var(--color-bd-faint)`, `var(--color-el-2)`
+
+When generating new sections, always use:
+- Tokens instead of px values.
+- `var(--token-name)` syntax for colors, spacing, and typography.
+- Grid and spacing conventions from the semantic layer (e.g. `sp-none`, `sp-sm`, `sp-md`, etc.)
+
+Fonts should use:
+`font-family: var(--ff-sans);`
