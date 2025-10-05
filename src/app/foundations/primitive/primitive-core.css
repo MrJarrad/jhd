@@ -97,6 +97,17 @@
   --op-900: 90%;
   --op-1000: 100%;
 
+    /* Stroke width */
+  --stroke-width-50: 1px;
+  --stroke-width-75: 1.25px;
+  --stroke-width-100: 1.5px;
+  --stroke-width-150: 1.75px;
+  --stroke-width-200: 2px;
+  --stroke-width-300: 2.25px;
+  --stroke-width-400: 2.5px;
+  --stroke-width-500: 2.75px;
+
+
   /* Viewport heights */
   --vh-sm: 35dvh;
   --vh-md: 50dvh;
