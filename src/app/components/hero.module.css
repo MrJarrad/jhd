@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   padding: 5rem 1.5rem; /* use spacing utilities from utils when available */
-  background: linear-gradient(135deg, var(--color-bg-focused-dark), var(--color-bg-focused-light));
+  background: var(--color-bg-default-primary);
   color: var(--color-ct-default-primary);
   text-align: center;
   font-family: var(--ty-title-ff, var(--ff-sans));
@@ -17,16 +17,16 @@
 .title {
   font-family: var(--ty-title-ff);
   font-weight: var(--ty-title-fw);
-  font-size: var(--ty-title-lg-fs);
+  font-size: var(--ty-title-md-fs);
   line-height: var(--ty-title-lh);
   margin-bottom: 1rem;
-  letter-spacing: var(--ty-title-lg-ls);
+  letter-spacing: var(--ty-title-md-ls);
 }
 
 .subtitle {
   font-family: var(--ty-subtitle-ff);
   font-weight: var(--ty-subtitle-fw);
-  font-size: var(--ty-subtitle-lg-fs);
+  font-size: var(--ty-subtitle-md-fs);
   line-height: var(--ty-subtitle-lh);
   margin-bottom: 1.5rem;
   color: var(--color-ct-default-secondary);
@@ -40,7 +40,7 @@
 
 .primary {
   background: var(--color-bg-action-primary);
-  color: var(--core-white);
+  color: var(--color-ct-action);
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
   font-weight: var(--ty-title-fw);
