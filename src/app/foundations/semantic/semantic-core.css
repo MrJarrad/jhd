@@ -1,0 +1,218 @@
+/* ==========================================================================
+   Semantic Core
+   ==========================================================================
+
+/* ==============================
+   ==============================
+   ============================== */
+   Grid Contained (12-column)
+   ============================== */
+
+/* Grid Contained / Gap (md = default) */
+:root {
+  --gr-co-gap-md: var(--dimension-dim-300);
+}
+@media (min-width: 768px) {
+  :root { --gr-co-gap-md: var(--dimension-dim-400); }
+}
+@media (min-width: 1024px) {
+  :root { --gr-co-gap-md: var(--dimension-dim-500); }
+}
+@media (min-width: 1440px) {
+  :root { --gr-co-gap-md: var(--dimension-dim-500); }
+}
+
+/* Grid Contained / Gap lg */
+:root {
+  --gr-co-gap-lg: var(--dimension-dim-400);
+}
+@media (min-width: 768px) {
+  :root { --gr-co-gap-lg: var(--dimension-dim-450); }
+}
+@media (min-width: 1024px) {
+  :root { --gr-co-gap-lg: var(--dimension-dim-600); }
+}
+@media (min-width: 1440px) {
+  :root { --gr-co-gap-lg: var(--dimension-dim-600); }
+}
+
+/* Grid Contained / Margin (md = default) */
+:root {
+  --gr-co-mg-md: var(--dimension-dim-300);
+}
+@media (min-width: 768px) {
+  :root { --gr-co-mg-md: var(--dimension-dim-400); }
+}
+@media (min-width: 1024px) {
+  :root { --gr-co-mg-md: var(--dimension-dim-500); }
+}
+@media (min-width: 1440px) {
+  :root { --gr-co-mg-md: var(--dimension-dim-500); }
+}
+
+/* Grid Contained / Indent (md = default) */
+:root {
+  --gr-co-in-md: var(--dimension-dim-225);
+}
+@media (min-width: 768px) {
+  :root { --gr-co-in-md: var(--dimension-dim-200); }
+}
+@media (min-width: 1024px) {
+  :root { --gr-co-in-md: var(--dimension-dim-300); }
+}
+@media (min-width: 1440px) {
+  :root { --gr-co-in-md: var(--dimension-dim-300); }
+}
+
+/* Grid Contained / Offset (md = default) */
+:root {
+  --gr-co-off-md: var(--dimension-dim-250);
+}
+@media (min-width: 768px) {
+  :root { --gr-co-off-md: var(--dimension-dim-300); }
+}
+@media (min-width: 1024px) {
+  :root { --gr-co-off-md: var(--dimension-dim-400); }
+}
+@media (min-width: 1440px) {
+  :root { --gr-co-off-md: var(--dimension-dim-400); }
+}
+
+/* Define 12-column grid */
+:root {
+  --gr-cols: repeat(12, 1fr);
+}
+
+/* ==============================
+   ==============================
+   ============================== */
+   Grid Flush (Full-width)
+   ============================== */
+
+/* Grid Flush / Gap (md = default) */
+:root {
+  --gr-fl-gap-md: var(--dimension-dim-0);
+}
+
+/* Grid Flush / Margin (md = default) */
+:root {
+  --gr-fl-mg-md: var(--dimension-dim-0);
+}
+
+/* Grid Flush / Padding (md = default) */
+:root {
+  --gr-fl-pd-md: var(--dimension-dim-300);
+}
+@media (min-width: 768px) {
+  :root { --gr-fl-pd-md: var(--dimension-dim-400); }
+}
+@media (min-width: 1024px) {
+  :root { --gr-fl-pd-md: var(--dimension-dim-500); }
+}
+@media (min-width: 1440px) {
+  :root { --gr-fl-pd-md: var(--dimension-dim-500); }
+}
+
+/* Grid Flush / Indent (md = default) */
+:root {
+  --gr-fl-in-md: var(--dimension-dim-150);
+}
+@media (min-width: 768px) {
+  :root { --gr-fl-in-md: var(--dimension-dim-200); }
+}
+@media (min-width: 1024px) {
+  :root { --gr-fl-in-md: var(--dimension-dim-300); }
+}
+@media (min-width: 1440px) {
+  :root { --gr-fl-in-md: var(--dimension-dim-300); }
+}
+
+/* Grid Flush / Offset (md = default) */
+:root {
+  --gr-fl-off-md: var(--dimension-dim-225);
+}
+@media (min-width: 768px) {
+  :root { --gr-fl-off-md: var(--dimension-dim-300); }
+}
+@media (min-width: 1024px) {
+  :root { --gr-fl-off-md: var(--dimension-dim-400); }
+}
+@media (min-width: 1440px) {
+  :root { --gr-fl-off-md: var(--dimension-dim-400); }
+}
+
+/* ==============================
+   ==============================
+   ============================== */
+   Space (Vertical Spacing)
+   ============================== */
+
+/* Space / none */
+:root {
+  --sp-none: var(--dimension-dim-0);
+}
+@media (min-width: 768px) {
+  :root { --sp-none: var(--dimension-dim-0); }
+}
+@media (min-width: 1024px) {
+  :root { --sp-none: var(--dimension-dim-0); }
+}
+@media (min-width: 1440px) {
+  :root { --sp-none: var(--dimension-dim-0); }
+}
+
+/* Space / sm */
+:root {
+  --sp-sm: var(--dimension-dim-150);
+}
+@media (min-width: 768px) {
+  :root { --sp-sm: var(--dimension-dim-200); }
+}
+@media (min-width: 1024px) {
+  :root { --sp-sm: var(--dimension-dim-300); }
+}
+@media (min-width: 1440px) {
+  :root { --sp-sm: var(--dimension-dim-300); }
+}
+
+/* Space / md (default) */
+:root {
+  --sp-md: var(--dimension-dim-300);
+}
+@media (min-width: 768px) {
+  :root { --sp-md: var(--dimension-dim-400); }
+}
+@media (min-width: 1024px) {
+  :root { --sp-md: var(--dimension-dim-500); }
+}
+@media (min-width: 1440px) {
+  :root { --sp-md: var(--dimension-dim-500); }
+}
+
+/* Space / lg */
+:root {
+  --sp-lg: var(--dimension-dim-500);
+}
+@media (min-width: 768px) {
+  :root { --sp-lg: var(--dimension-dim-700); }
+}
+@media (min-width: 1024px) {
+  :root { --sp-lg: var(--dimension-dim-1000); }
+}
+@media (min-width: 1440px) {
+  :root { --sp-lg: var(--dimension-dim-1000); }
+}
+
+/* Space / xl */
+:root {
+  --sp-xl: var(--dimension-dim-800);
+}
+@media (min-width: 768px) {
+  :root { --sp-xl: var(--dimension-dim-1000); }
+}
+@media (min-width: 1024px) {
+  :root { --sp-xl: var(--dimension-dim-1200); }
+}
+@media (min-width: 1440px) {
+  :root { --sp-xl: var(--dimension-dim-1200); }
+}

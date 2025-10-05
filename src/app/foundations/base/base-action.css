@@ -1,0 +1,41 @@
+:root {
+  /* Action 100 */
+  --action-100-height: var(--dim-350);
+  --action-100-justified-height: var(--dim-600);
+  --action-100-icon-width: var(--dim-350);
+  --action-100-border: var(--bw-s);
+  --action-100-justified-border: var(--bw-lg);
+  --action-100-space-h: var(--dim-200);
+  --action-100-space-h-offset: var(--dim-100);
+  --action-100-space-v: var(--dim-75);
+
+  /* Action 200 */
+  --action-200-height: var(--dim-450);
+  --action-200-justified-height: var(--dim-800);
+  --action-200-icon-width: var(--dim-450);
+  --action-200-border: var(--bw-md);
+  --action-200-justified-border: var(--bw-xl);
+  --action-200-space-h: var(--dim-350);
+  --action-200-space-h-offset: var(--dim-150);
+  --action-200-space-v: var(--dim-150);
+
+  /* Action 300 */
+  --action-300-height: var(--dim-600);
+  --action-300-justified-height: var(--dim-900);
+  --action-300-icon-width: var(--dim-600);
+  --action-300-border: var(--bw-lg);
+  --action-300-justified-border: var(--bw-2xl);
+  --action-300-space-h: var(--dim-400);
+  --action-300-space-h-offset: var(--dim-200);
+  --action-300-space-v: var(--dim-150);
+
+  /* Action 400 */
+  --action-400-height: var(--dim-800);
+  --action-400-justified-height: var(--dim-1000);
+  --action-400-icon-width: var(--dim-800);
+  --action-400-border: var(--bw-xl);
+  --action-400-justified-border: var(--bw-3xl);
+  --action-400-space-h: var(--dim-500);
+  --action-400-space-h-offset: var(--dim-200);
+  --action-400-space-v: var(--dim-200);
+}

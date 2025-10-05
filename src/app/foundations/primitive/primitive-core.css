@@ -1,0 +1,107 @@
+:root {
+  /* Global */
+  --root-font-size: 16px;
+  --container-max-width: 2156px;
+
+  /* Aspect ratios */
+  --ar-square: 1 / 1;
+  --ar-landscape: 16 / 9;
+  --ar-portrait: 3 / 4;
+  --ar-tall: 9 / 16;
+
+  /* Border radius */
+  --br-0: 0rem;
+  --br-xs: 0.25rem;
+  --br-md: 1rem;
+  --br-lg: 2rem;
+  --br-xl: 4rem;
+  --br-2xl: 8rem;
+  --br-primary: 0.5rem;
+  --br-full: 100%;
+
+  /* Border width */
+  --bw-xs: 0.0781rem;
+  --bw-s: 0.0938rem;
+  --bw-lg: 0.125rem;
+  --bw-xl: 0.1406rem;
+  --bw-2xl: 0.1562rem;
+  --bw-3xl: 0.1719rem;
+  --bw-primary: 0.1094rem;
+
+  /* Dimension */
+  --dim-0: 0rem;
+  --dim-25: 0.0625rem;
+  --dim-50: 0.125rem;
+  --dim-75: 0.25rem;
+  --dim-100: 0.5rem;
+  --dim-150: 0.75rem;
+  --dim-200: 1rem;
+  --dim-250: 1.25rem;
+  --dim-300: 1.5rem;
+  --dim-350: 1.75rem;
+  --dim-400: 2rem;
+  --dim-450: 2.5rem;
+  --dim-500: 3rem;
+  --dim-600: 3.5rem;
+  --dim-700: 4rem;
+  --dim-800: 4.5rem;
+  --dim-900: 5rem;
+  --dim-1000: 6rem;
+  --dim-1100: 8rem;
+  --dim-1200: 10rem;
+  --dim-1300: 12rem;
+  --dim-1400: 16rem;
+  --dim-1500: 20rem;
+
+  /* Grid column span */
+  --col-span-1: span 1;
+  --col-span-2: span 2;
+  --col-span-3: span 3;
+  --col-span-4: span 4;
+  --col-span-5: span 5;
+  --col-span-6: span 6;
+  --col-span-7: span 7;
+  --col-span-8: span 8;
+  --col-span-9: span 9;
+  --col-span-10: span 10;
+  --col-span-11: span 11;
+  --col-span-12: span 12;
+
+  /* Grid column start */
+  --col-start-1: 1;
+  --col-start-2: 2;
+  --col-start-3: 3;
+  --col-start-4: 4;
+  --col-start-5: 5;
+  --col-start-6: 6;
+  --col-start-7: 7;
+  --col-start-8: 8;
+  --col-start-9: 9;
+  --col-start-10: 10;
+  --col-start-11: 11;
+  --col-start-12: 12;
+
+  /* Grid columns */
+  --grid-cols: 12;
+
+  /* Opacity */
+  --op-0: 0%;
+  --op-100: 10%;
+  --op-200: 20%;
+  --op-300: 30%;
+  --op-400: 40%;
+  --op-500: 50%;
+  --op-600: 60%;
+  --op-700: 70%;
+  --op-800: 80%;
+  --op-900: 90%;
+  --op-1000: 100%;
+
+  /* Viewport heights */
+  --vh-sm: 35dvh;
+  --vh-md: 50dvh;
+  --vh-lg: 65dvh;
+  --vh-xl: 85dvh;
+  --vh-full: 100dvh;
+
+}

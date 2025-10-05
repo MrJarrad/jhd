@@ -1,0 +1,7 @@
+/* Suisse Intl */
+@import "./suisse-intl/index.css";
+
+/* Map to system tokens */
+:root {
+  --ff-sans: "Suisse Intl", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}

@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Base / Effects
+   ========================================================================== */
+
+/* ============================== */
+/* Effects / Drop Shadows          */
+/* ============================== */
+:root {
+  --fx-ds-0: 0px 0px 0px 0px var(--color-el-0);
+
+  --fx-ds-100: 
+    0px 0px 1px 0px var(--color-el-100),
+    0px 2px 2px 0px var(--color-el-200),
+    0px 4px 2px 0px var(--color-el-300),
+    0px 7px 3px 0px var(--color-el-0),
+    0px 11px 3px 0px var(--color-el-0);
+
+  --fx-ds-200: 
+    0px 0px 2px 0px var(--color-el-100),
+    0px 4px 4px 0px var(--color-el-200),
+    0px 9px 5px 0px var(--color-el-300),
+    0px 16px 6px 0px var(--color-el-0),
+    0px 25px 7px 0px var(--color-el-0);
+}
+
+/* ============================== */
+/* Effects / Inner Shadows         */
+/* ============================== */
+:root {
+  --fx-is-0: inset 0px 0px 0px 0px var(--color-el-0);
+
+  --fx-is-100: 
+    inset 0px 0px 1px 0px var(--color-el-100),
+    inset 0px 2px 2px 0px var(--color-el-200),
+    inset 0px 4px 2px 0px var(--color-el-300),
+    inset 0px 7px 3px 0px var(--color-el-0),
+    inset 0px 11px 3px 0px var(--color-el-0);
+
+  --fx-is-200: 
+    inset 0px 0px 2px 0px var(--color-el-100),
+    inset 0px 4px 4px 0px var(--color-el-200),
+    inset 0px 9px 5px 0px var(--color-el-300),
+    inset 0px 16px 6px 0px var(--color-el-0),
+    inset 0px 25px 7px 0px var(--color-el-0);
+}
+
+/* ============================== */
+/* Effects / Blur                  */
+/* ============================== */
+:root {
+  --fx-bl-0: blur(0px);
+  --fx-bl-100: blur(4px);
+  --fx-bl-200: blur(8px);
+  --fx-bl-300: blur(16px);
+}
+
+/* ============================== */
+/* Effects / Glass                 */
+/* ============================== */
+:root {
+  --fx-gl-100-th: blur(4px) saturate(120%) contrast(90%);
+  --fx-gl-200-th: blur(8px) saturate(120%) contrast(90%);
+  --fx-gl-300-th: blur(12px) saturate(120%) contrast(90%);
+
+  --fx-gl-100-ba: blur(4px) saturate(150%) contrast(90%);
+  --fx-gl-200-ba: blur(8px) saturate(150%) contrast(90%);
+  --fx-gl-300-ba: blur(12px) saturate(150%) contrast(90%);
+
+  --fx-gl-100-tk: blur(4px) saturate(180%) contrast(90%);
+  --fx-gl-200-tk: blur(8px) saturate(180%) contrast(90%);
+  --fx-gl-300-tk: blur(12px) saturate(180%) contrast(90%);
+}

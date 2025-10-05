@@ -1,0 +1,46 @@
+:root {
+  /* Disabled */
+  --status-disabled-base: var(--cod-grey-400);
+  --status-disabled-dark: var(--cod-grey-500);
+  --status-disabled-darker: var(--cod-grey-600);
+  --status-disabled-darkest: var(--cod-grey-700);
+  --status-disabled-light: var(--cod-grey-300);
+  --status-disabled-lighter: var(--cod-grey-200);
+  --status-disabled-lightest: var(--cod-grey-100);
+
+  /* Focused */
+  --status-focused-base: var(--malibu-500);
+  --status-focused-dark: var(--malibu-600);
+  --status-focused-darker: var(--malibu-700);
+  --status-focused-darkest: var(--malibu-800);
+  --status-focused-light: var(--malibu-300);
+  --status-focused-lighter: var(--malibu-200);
+  --status-focused-lightest: var(--malibu-100);
+
+  /* Negative */
+  --status-negative-base: var(--punch-500);
+  --status-negative-dark: var(--punch-600);
+  --status-negative-darker: var(--punch-700);
+  --status-negative-darkest: var(--punch-800);
+  --status-negative-light: var(--punch-300);
+  --status-negative-lighter: var(--punch-200);
+  --status-negative-lightest: var(--punch-100);
+
+  /* Positive */
+  --status-positive-base: var(--elm-500);
+  --status-positive-dark: var(--elm-600);
+  --status-positive-darker: var(--elm-700);
+  --status-positive-darkest: var(--elm-800);
+  --status-positive-light: var(--elm-300);
+  --status-positive-lighter: var(--elm-200);
+  --status-positive-lightest: var(--elm-100);
+
+  /* Warning */
+  --status-warning-base: var(--lightning-yellow-500);
+  --status-warning-dark: var(--lightning-yellow-600);
+  --status-warning-darker: var(--lightning-yellow-700);
+  --status-warning-darkest: var(--lightning-yellow-800);
+  --status-warning-light: var(--lightning-yellow-300);
+  --status-warning-lighter: var(--lightning-yellow-200);
+  --status-warning-lightest: var(--lightning-yellow-100);
+}

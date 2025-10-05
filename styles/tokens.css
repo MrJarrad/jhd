@@ -1,0 +1,15 @@
+@import "@/foundations/primitive/primitive-core.css";
+@import "@/foundations/primitive/primitive-typography.css";
+@import "@/foundations/primitive/primitive-color-palette.css";
+@import "@/foundations/primitive/primitive-social.css";
+
+@import "@/foundations/base/base-action.css";
+@import "@/foundations/base/base-icon.css";
+@import "@/foundations/base/base-color-status.css";
+@import "@/foundations/base/base-effects.css";
+
+@import "@/foundations/semantic/semantic-core.css";
+@import "@/foundations/semantic/semantic-typography.css";
+@import "@/foundations/semantic/semantic-color.css";
+
+@import "@/utils/utils_fonts/index.css";

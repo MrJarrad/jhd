@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JHD Design System
 
-## Getting Started
+A token-driven design system powering **Builder.io** components with a clean separation of concerns across **foundations, utils, integration, and components**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📂 Repository Structure
+
+```
+foundations/       # Core design tokens
+  primitive/       # Raw primitives (core, typography, palette, social)
+  base/            # Base tokens (action, icon, color-status, effects)
+  semantic/        # Semantic tokens (roles, grid, spacing, color, typography)
+  -foundations-README.md
+
+utils/             # Utilities
+  utils_motion/    # Motion utilities (variants, hooks, parallax, smooth scroll)
+  utils_fonts/     # Font setup (Suisse Intl Medium → --ff-sans)
+  -utils-README.md
+
+integration/       # Bridge layer → maps tokens into CMS props
+  tokens-to-props.ts
+  props-schema.ts
+  builder-mapping.json
+  README.md
+
+components/ 🚧     # CMS-ready React components consuming integration props
+  (to be developed)
+
+README.md          # Root-level overview (this file)
+package.json       # Project dependencies
+tsconfig.json      # TypeScript config
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🎨 Design Token Flow
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Foundations** → Primitives, Base, Semantic tokens  
+2. **Utils** → Motion + Fonts  
+3. **Integration** → Tokens mapped into Builder.io props  
+4. **Components (🚧 next)** → React + Builder.io CMS-ready UI  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚡ Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Install dependencies:  
+   ```sh
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Import tokens in your styles:  
+   ```css
+   @import "@/foundations/primitive/primitive-core.css";
+   @import "@/foundations/base/base-action.css";
+   @import "@/foundations/semantic/semantic-core.css";
+   ```
 
-## Deploy on Vercel
+3. Use integration props in components:  
+   ```tsx
+   import { builderProps } from "@/integration/tokens-to-props";
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   export function SectionWrapper({ theme = "light" }) {
+     return (
+       <section style={{ background: builderProps.theme[theme] }}>
+         Content
+       </section>
+     );
+   }
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. In Builder.io, sync `builder-mapping.json` to create dropdowns for editors.
+
+---
+
+## 🧭 Principles
+
+- **Token-first:** Components consume only `var(--token)` references.  
+- **Separation of concerns:**  
+  - Foundations = design truth  
+  - Utils = behavior helpers  
+  - Integration = mapping layer  
+  - Components = Builder.io-ready UI  
+- **Scalable:** Easy to extend with new tokens, utilities, or components.  

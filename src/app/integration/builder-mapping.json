@@ -1,0 +1,41 @@
+{
+  "theme": [
+    "light",
+    "dark"
+  ],
+  "grid": [
+    "contained",
+    "flush"
+  ],
+  "spacing": [
+    "none",
+    "sm",
+    "md",
+    "lg",
+    "xl"
+  ],
+  "typography": [
+    "title",
+    "subtitle",
+    "body"
+  ],
+  "actionSize": [
+    "sm",
+    "md",
+    "lg"
+  ],
+  "surface": [
+    "base",
+    "thick",
+    "thickest",
+    "thin",
+    "thinnest"
+  ],
+  "surfaceInverse": [
+    "base",
+    "thick",
+    "thickest",
+    "thin",
+    "thinnest"
+  ]
+}
