@@ -3,7 +3,7 @@ export default {
     multipass: true,
     js2svg: { indent: 2, pretty: true },
     plugins: [
-      // Remove extra metadata / editors' cruft
+      // --- Core cleanup ---
       "cleanupAttrs",
       "removeDoctype",
       "removeXMLProcInst",
@@ -16,12 +16,14 @@ export default {
       "removeHiddenElems",
       "removeEmptyText",
       "removeEmptyContainers",
-      // Keep viewBox but remove explicit width/height
+  
+      // --- Keep viewBox but remove width/height ---
       {
         name: "removeDimensions",
         active: true,
       },
-      // Remove baked fill / stroke attributes
+  
+      // --- Remove baked stroke / fill / stroke-width values ---
       {
         name: "removeAttrs",
         params: {
@@ -35,7 +37,8 @@ export default {
           ],
         },
       },
-      // Ensure rounded caps / joins and consistent viewBox
+  
+      // --- Normalize attributes for token control ---
       {
         name: "addAttributesToSVGElement",
         params: {
@@ -47,6 +50,18 @@ export default {
             { viewBox: "0 0 32 32" },
           ],
         },
+      },
+  
+      // --- Optional: tidy up IDs / precision ---
+      {
+        name: "cleanupNumericValues",
+        params: {
+          floatPrecision: 3,
+        },
+      },
+      {
+        name: "prefixIds",
+        params: { prefix: false },
       },
     ],
   };
